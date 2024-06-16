@@ -1,0 +1,1 @@
+This NLP project builds a chatbot using Dialogflow to handle food delivery orders. It covers fundamentals like MySQL database for a complete food delivery system.

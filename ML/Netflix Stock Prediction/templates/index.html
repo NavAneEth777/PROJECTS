@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Stock Prediction!</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="blinker">Netflix Stock Prediction</h1>
+        <form action="/predict" method="post">
+            <div class="1">
+                <label for="Open">Open</label>
+                <input type="number" id="Open" class="Open" name="open" required step="0.01" value="0">
+            </div>
+            <div class="2">
+                <label for="high">High</label>
+                <input type="number" id="high" class="high" name="high" required step="0.01" value="0">
+            </div>
+            <div class="3">
+                <label for="low">Low</label>
+                <input type="number" id="low" class="low" name="low" required step="0.01" value="0">
+            </div>
+            <div class="4">
+                <label for="adj">Adj_Close</label>
+                <input type="number" id="adj" class="adj" name="adj" required step="0.01" value="0">
+            </div>
+            <div class="5">
+                <label for="volume">Volume</label>
+                <input type="number" id="volume" class="volume" name="volume" required step="0.01" value="0">
+            </div>
+            <div class="6">
+                <label for="year">year</label>
+                <input type="number" id="year" class="year" name="year" required step="0.01" value="0">
+            </div>
+            <div class="7">
+                <label for="month">month</label>
+                <input type="number" id="month" class="month" name="month" required step="0.01" value="0">
+            </div>
+            <div class="8">
+                <label for="day">day</label>
+                <input type="number" id="day" class="day" name="day" required step="0.01" value="0">
+            </div>
+            <button type="submit">Get Prediction</button>
+        </form>
+    </div>
+    <marquee behavior="alternate" direction="right">{{output}}</marquee>
+</body>
+</html>

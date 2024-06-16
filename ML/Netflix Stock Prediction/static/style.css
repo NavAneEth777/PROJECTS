@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    color: white;
+    margin: 30px; 
+}
+.container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-size: 60px;
+}
+h1:hover{
+    color: yellow;
+    cursor: pointer;
+}
+form div {
+    margin: 20px;
+}
+input{
+    height: 45px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+label {
+    font-size: 20px;
+    font-weight: 800;
+}
+button{
+    font-size: 30px;
+    text-decoration: none;
+    border: none;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 200px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+button:hover {
+    color: yellow;
+    cursor: pointer;
+}
+marquee {
+    font-size: 40px;
+}
+marquee:hover {
+    color: yellow;
+}
+
+h1 {
+    animation: blinker 0.5s linear infinite;
+}
+@keyframes blinker {
+    50% {
+        color: red;
+        opacity: 1;
+    }
+}
